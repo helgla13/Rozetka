@@ -4,26 +4,75 @@
 .item{
     position: relative;
     float: left;
-    border: 1px solid #000;
+    border: 1px solid #eee;
+}
+.item:hover{
+    box-shadow:2px -2px 2px cornflowerblue,
+    -2px -2px 2px cornflowerblue;
+    z-index: 20;
 }
 .item:hover .item-specifications{
     display: block;
+    box-shadow:2px 2px 2px cornflowerblue,
+    -2px 2px 2px cornflowerblue;
+    z-index: 20;
 }
 .item-info{
     width: 250px;
-    height: 250px;
-    background: #0000ff;
+    height: 350px;
 }
 .item-specifications{
     width: 250px;
-    height: 100px;
-    background: #ffff00;
+    height: 235px;
+    background: #ffffff;
     display: none;
     position: absolute;
-    top: 250px;
+    top: 350px;
     z-index: 15;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;;
 }
-
+.top{
+    background-color: darkorange;
+    font-family: Arial;
+    color: white;
+    width: 100px;
+    height: 27px;
+    position: absolute;
+    top: 5px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 15px;
+    padding-left: 7px;
+}
+.akcia{
+    background-color: red;
+    font-family: Arial;
+    color: white;
+    width: 60px;
+    height: 27px;
+    position: absolute;
+    top: 5px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 15px;
+    padding-left: 7px;
+}
+.exclusiv{
+    background-color: fuchsia;
+    font-family: Arial;
+    color: white;
+    width: 110px;
+    height: 27px;
+    position: absolute;
+    top: 5px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 15px;
+    padding-left: 7px;
+}
 .pics{
     width: 180px;
     height: 180px;
@@ -34,7 +83,7 @@
     font-size: 15px;
     color: dodgerblue;
     padding: 7px;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-bottom: 1px;
 }
 .end{
@@ -47,17 +96,18 @@
 .price{
     font-family: Arial;
     background-color: gold;
-    font-size: 20px;
+    font-size: 18px;
     width: 78px;
     height: 25px;
     margin-left: 7px;
     border-radius: 5px;
     padding: 5px;
     float: left;
+    margin-top: 8px;
 }
 .grn{
     font-family: Arial;
-    font-size: 14px;
+    font-size: 12px;
 }
 .rating{
     color: gold;
@@ -68,13 +118,17 @@
 .otzyv{
     font-size: 12px;
     color: dodgerblue;
+    text-decoration: none;
+}
+.otzyv:hover{
+    text-decoration: underline;
 }
 .carts{
     width: 25px;
     height: 25px;
 }
 .cart{
-    margin-left: 7px;
+    margin-left: 19px;
     float: left;
 }
 .heart1{
@@ -83,128 +137,70 @@
 }
 .heart{
     color: gold;
-    padding-left: 13px;
+    padding-left: 18px;
     float: left;
     border-left: solid;
     border-color: #cccccc;
     border-width: thin;
-    margin-left: 20px;
+    margin-left: 38px;
 }
 .weighes1{
     width: 25px;
     height: 25px;
 }
 .weighes{
-    padding-left: 10px;
+    padding-left: 18px;
     float: left;
     border-left: solid;
     border-color: #cccccc;
     border-width: thin;
-    margin-left: 15px;
+    margin-left: 20px;
 }
-.one{
-    width: 250px;
-    height: 350px;
-    border: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-    display: inline-block;
+.buy{
+    opacity: 0;
+    position: absolute;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    left: 3px;
+}
+.buycart{
+    width: 25px;
+    height: 25px;
+}
+.cart:hover button{
+    background-color: lawngreen;
     opacity: 1;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 50ms;
-    z-index: 2;
 }
-.one:hover{
-    height: 500px;
-
-
+.kred{
+    width: 47px;
+    height: 60px;
+    border: solid red 1px;
+    position: absolute;
+    bottom: 216px;
+    left: 20px;
 }
-.two{
-    width: 250px;
-    height: 350px;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
+.podarok{
+   font-size: 11px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    display: block;
 }
-.three{
-    width: 250px;
-    height: 350px;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
+.akcia1{
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: red;
+    position: absolute;
+    bottom: 158px;
+    padding-left: 7px;
 }
-.four {
-    width: 250px;
-    height: 350px;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-}
-.five {
-    width: 250px;
-    height: 350px;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-}
-.six {
-    width: 250px;
-    height: 350px;
-    border-right: solid;
-    border-bottom: solid;
-    border-left: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-    z-index: 1;
-}
-.seven {
-    width: 250px;
-    height: 350px;
-    border-right: solid;
-    border-bottom: solid;
-    border-width: thin;
-     border-color: #cccccc;
-    float: left;
-}
-.eight {
-    width: 250px;
-    height: 350px;
-    border-right: solid;
-    border-bottom: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-}
-.nine {
-    width: 250px;
-    height: 350px;
-    border-right: solid;
-    border-bottom: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
-}
-.ten {
-    width: 250px;
-    height: 350px;
-    border-right: solid;
-    border-bottom: solid;
-    border-width: thin;
-    border-color: #cccccc;
-    float: left;
+.zach{
+    font-family: Arial;
+font-size: 18px;
+    color: #999999;
+margin: 7px;
+    margin-bottom: 0px;
+    text-decoration:line-through;
+    text-decoration-color: red;
 }
